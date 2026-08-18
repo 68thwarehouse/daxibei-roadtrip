@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: daxibei-workbench
+    runtime: node
+    plan: free
+    region: oregon        # 可改为 ap-southeast 等就近区域
+    buildCommand: "echo no-build"
+    startCommand: "node server.js"
+    envVars:
+      - key: PORT
+        value: "10000"
+    # 若需持久化共享数据（跨重启/部署不丢），在 Render 控制台为该服务挂载 Disk：
+    #   mountPath: /data  并将 server.js 中 DATA_DIR 指向 /data（默认已是 ./data）

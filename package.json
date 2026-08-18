@@ -1,0 +1,13 @@
+{
+  "name": "daxibei-workbench",
+  "version": "2.0.0",
+  "description": "大西北环线13日自驾工作台 · 多人实时共享版（零依赖 Node 后端 + 静态前端）",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "private": true
+}

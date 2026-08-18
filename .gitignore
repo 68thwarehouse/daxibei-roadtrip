@@ -1,0 +1,13 @@
+# 运行时生成
+/data/
+node_modules/
+
+# 本地测试产物
+_t_*.html
+_t_*.txt
+
+# 个人/项目记忆（不入库）
+.workbuddy/
+
+# 旧静态部署目录（可选）
+deploy/
